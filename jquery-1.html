@@ -2,6 +2,10 @@
 <html>
 <head>
   <title>jQuery test page</title>
+  <style>
+  .byline {
+  color: yellow;}
+  </style>
 </head>
 <body>
   <h1>Lorem ipsum</h1>
@@ -39,6 +43,16 @@
       var change = $('h1').text('new1')
       var change = $ ('h2').text ('new2')
     }
+    function noSubhed (){
+        $("h2").fadeOut;
+        $("h3").fadeOut
+      }
+
+function highlightByline (){
+  $("byline").addClass('byline');
+}
+
+
 
 </script>
 
