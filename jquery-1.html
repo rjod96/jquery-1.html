@@ -44,15 +44,21 @@
       var change = $ ('h2').text ('new2')
     }
     function noSubhed (){
-        $("h2").fadeOut;
-        $("h3").fadeOut
+      $("h2").fadeOut();
+        $("h3").fadeOut();
       }
 
-function highlightByline (){
-  $("byline").addClass('byline');
-}
+    function undo (){
+    $("h2").show("h2");
+    $("h3").show("h3");
+  }
 
-
+     function highlightByline (){
+     $("byline").addClass('byline');
+     }
+     function unHighlightByline (){
+       $("byline").removeClass('byline');
+     }
 
 </script>
 
